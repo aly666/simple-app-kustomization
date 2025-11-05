@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-app
+  labels:
+    environment: production
+spec:
+  replicas: 5
+  template:
+    spec:
+      containers:
+        - name: simple-app-container
+          env:
+            - name: ENVIRONMENT
+              value: prod
+

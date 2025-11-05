@@ -1,0 +1,8 @@
+- op: replace
+  path: /spec/template/spec/containers/0/image
+  value: nginx:1.23
+
+- op: add
+  path: /metadata/labels/environment
+  value: production
+
